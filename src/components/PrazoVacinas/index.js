@@ -10,19 +10,22 @@ class PrazoVacinas extends PureComponent {
 
   constructor(props) {
     super(props);
-    this.state = {value: ''};
+    this.state = {values:{ faixa: '', vacina: '', data: '' }};
 
-    this.handleChange = this.handleChange.bind(this);
+    this.handleChangeFaixaEtaria = this.handleChangeFaixaEtaria.bind(this);
+    this.handleChangeVacina = this.handleChangeVacina.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleDate = this.handleDate.bind(this);
   }
 
-  handleChange(event) {
-    this.setState({value: event.target.value});
+  handleChangeFaixaEtaria(event) {
+    this.setState((x) => x.values.faixa = event.target.value);
   }
-
+  handleChangeVacina(event) {
+    this.setState((x) => x.values.vacina = event.target.value);
+  }
   handleDate(event) {
-    this.setState({value: event.target.value});
+    this.setState((x) => x.values.data = event.target.value);
   }
 
   handleSubmit(event) {
@@ -30,8 +33,8 @@ class PrazoVacinas extends PureComponent {
     //result[1] = "VacinaData";
     //alert('A data da próxima vacina é: ' + result);
     //this.setState({value: result});
-
-    alert('A data da próxima vacina é: ' + this.state.value);
+    console.log(this.state.values)
+    alert('A data da próxima vacina é: ' + this.state.data);
     event.preventDefault();
   
   }
@@ -46,7 +49,11 @@ class PrazoVacinas extends PureComponent {
 
         <form onSubmit={this.handleSubmit}>
           <label>
-            <select className="pesquisa-faixa-etaria" type="checkbox" value={this.state.value} onChange={this.handleChange}>
+            <select
+              className="pesquisa-faixa-etaria"
+              value={this.state.faixa}
+              onChange={this.handleChangeFaixaEtaria}
+            >
                     <option value="" disabled>Selecione a faixa etária:</option>
                     {
                 dados.categorias.map((v, i) => <option key={i}  value={i}> {v.titulo} </option>
@@ -55,7 +62,11 @@ class PrazoVacinas extends PureComponent {
           </label>
 
           <label>
-            <select className="pesquisa-vacina" type="checkbox" value={this.state.value} onChange={this.handleChange}>
+            <select
+              className="pesquisa-vacina"
+              value={this.state.vacina}
+              onChange={this.handleChangeVacina}
+            >
               <option value="" disabled>Selecione a vacina:</option>
               {
                 dadosVAC.map((v, i) => <option key={i}  value={i}> {v.vacina} </option>
@@ -64,7 +75,7 @@ class PrazoVacinas extends PureComponent {
           </label>
 
           <label>
-            <input type="date" className="pesquisa-data" value={this.state.value} onChange={this.handleDate}/>
+            <input type="date" className="pesquisa-data" value={this.state.data} onChange={this.handleDate}/>
           </label>
 
           <label>
