@@ -280,10 +280,10 @@ Com este ultimo exemplo, você já consegue usar a api para receber os dados das
 
 ![Alt text](image-11.png)
 
-**Qual a diferença dos dois primeiros handles para os dois ultimos?**
+Na imagem acima, **Qual a diferença dos dois primeiros handles para os dois ultimos?**
 
 ![Alt text](image-12.png)
-  > os dois primeiros estão corretmante modificando apenas a variavel que lhes foi direcionado modificar, enquanto os dois ultimos estão apagando todas as variaveis salvas em state e salvando apenas as variavis dose e data, respectivamente.
+  > os dois primeiros estão corretmante modificando em state apenas a variavel que lhes foi direcionado modificar (respectivamente `faixa` e `vacinas`), enquanto os dois ultimos estão apagando todas as variaveis salvas em state e salvando apenas as variavis data e dose, respectivamente.
 
   > Você pode experiemtnar esse erro pedindo para o console.log exibir o valor salvo em state.
   > 
