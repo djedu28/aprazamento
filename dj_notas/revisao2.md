@@ -238,7 +238,7 @@ duas vezes foram utilizadas estas funções de forma equivocada
 
   Como usar variaveis global representam perigo, a forma correta de eportar as variaveis recebidas pela api ~~, e neste caso mokadas,~~ é retornar em formato de objeto e desconstruir ele na variavel que receberia o retorno da api.
 
-- Exemplo, o codigo da imagem acima ficaria:
+#### Exemplo, o codigo da imagem acima ficaria
 
   ![Alt text](image-9.png)
 
@@ -260,7 +260,8 @@ duas vezes foram utilizadas estas funções de forma equivocada
 
 A desconstrução não é obrigarorioa, você pode salvar o retorno da função em uma variavel e acessar as variaveis sem desconstruir.
 
-- Exemplo, em vez de desconstruir, criei uma variavel const vacinas:
+#### Exemplo, em vez de desconstruir, criei uma variavel const vacinas
+
   ![Alt text](image-10.png)
   > e para aceesar o titulo, faixaetaria ou intervaloDose, basta utilizar `vacinas.titulo` ou `vacinas.faixaetaria`
   >
@@ -269,4 +270,24 @@ A desconstrução não é obrigarorioa, você pode salvar o retorno da função 
   >```
   >
 
+Com este ultimo exemplo, você já consegue usar a api para receber os dados das vacinas em vez de usar os json
 
+- 1. trocar dados que vem da linha 3 `import dados from "../../vacinas.json";`
+  - 1.1 Comentando a linha 3
+  - 1.2 Trocando a variavel "dados" por "vacinas" que foi declarada no exemplo anterior ( [Exemplo, em vez de desconstruir,...](#exemplo-em-vez-de-desconstruir-criei-uma-variavel-const-vacinas) )
+
+### Erro nos handles
+
+![Alt text](image-11.png)
+
+**Qual a diferença dos dois primeiros handles para os dois ultimos?**
+
+![Alt text](image-12.png)
+  > os dois primeiros estão corretmante modificando apenas a variavel que lhes foi direcionado modificar, enquanto os dois ultimos estão apagando todas as variaveis salvas em state e salvando apenas as variavis dose e data, respectivamente.
+
+  > Você pode experiemtnar esse erro pedindo para o console.log exibir o valor salvo em state.
+  > 
+  > - Nos dois primiros casos state se mantem constante
+  > - Nos dois ultimos casos state é limpo e apresenta > apenas a ultima varaivel adicionada
+
+  > Você precisa corrigir os **dois ultimos handles** ( `handleDate` e `handleDose`) para respeitar a estrutura de state e modificar apenas o necessario, assim como os `handleChangeFaixaEtaria` e `handleChangeVacina`

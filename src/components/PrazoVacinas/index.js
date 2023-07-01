@@ -62,10 +62,10 @@ class PrazoVacinas extends PureComponent {
           "idaderecom_dose02",
           "idaderecom_dose03"
         ];
-          
+
         return { titulo, faixaetaria, intervaloDose, };
 
-      }); 
+      });
 
     var titulo = this.state.value.faixa.slice();
 
@@ -101,18 +101,21 @@ class PrazoVacinas extends PureComponent {
             <select id="faixaet" class="sel-pesquisa pesquisa-faixa-etaria" type="checkbox" value={this.state.faixa} onChange={this.handleChangeFaixaEtaria}>
               <option value="" disabled>Selecione a faixa etária:</option>
               {
-                dados.categorias.map((v, i) => <option key={i} value={i}> {v.titulo} </option>
-                )}
+                dados.categorias.map(
+                  (v, i) => <option key={i} value={i}> {v.titulo} </option>
+                )
+              }
             </select>
           </label>
 
           <label>
             <select class="sel-pesquisa pesquisa-vacina" type="checkbox" value={this.state.vacina} onChange={this.handleChangeVacina}>
               <option value="" disabled>Selecione a vacina:</option>
-
               {
-                dadosVAC.map((v, i) => <option key={i} value={i}> {v.vacina} </option>
-                )}
+                dadosVAC.map(
+                  (v, i) => <option key={i} value={i}> {v.vacina} </option>
+                )
+              }
             </select>
           </label>
 
