@@ -1,6 +1,8 @@
 # Revisão 02
 
-## Pacotes que considero suspeitos ou inuteis, e os desativei por segurança da minha maquina
+-----
+
+## Pacotes que considero suspeitos ou imuteis, e os desativei por segurança da minha máquina
 
 ```json
 "dependencies": {
@@ -27,6 +29,8 @@ para manter no histórico, coloquei eles no package.json em:
     "reinstall-node-modules": "^2.0.0"
   }
 ```
+
+-----
 
 ## Erro ao executar yarn start
 
@@ -92,8 +96,8 @@ Eu fui além destas soluções triviais, e adicionei um script que ignora o Open
 
 Fiz isso pois
 
-- não posso/quero baiar o nodejs 16 (por falta de espaço na minha maquina)
-- o metodo 2 não seria compativel com a tua maquina e nem no servidor
+- não posso/quero baiar o nodejs 16 (por falta de espaço na minha máquina)
+- o método 2 não seria compatível com a tua máquina e nem no servidor
 
 o script é bem simples:
 
@@ -109,9 +113,11 @@ Para usar basta trocar o `yarn start` por `yarn dev` e o sistema vai ignorar o o
 > Portanto, a melhor solução seria reverter para uma versão mais antiga do Node.js (como a versão 16) que seja compatível com todos os pacotes que você está usando.
 >
 
+-----
+
 ## Avisos listados ao executar o yarn dev
 
-- O script executou com sucesso, e exibiu a pagina no localhost:3000, no entanto no console do terminal apareceu esse erro:
+- O script executou com sucesso, e exibiu a pagina no localhost:3000, no entanto, no console do terminal apareceu esse erro:
 - ![Erro](image.png)
 
 ```bash
@@ -131,6 +137,8 @@ O erro fala por si, tem variáveis delatadas e não utilizadas em ./src/componen
 
 Esse tipo de erro não impede a exibição no computador/modo desenvolvimento, porem na versão em produção, a vercel e outros impedem a compilação do frontend, por causa desse erro
 
+-----
+
 ### Analisando erro 1
 
 O primeiro alarme fala sobre variável titulo não sendo usada.
@@ -145,17 +153,17 @@ acredito que a intenção era verificar se titulo é IGUAL a "Recém-nascido", m
 
 é salvando "Recém-nascido" na variável titulo
 
-para comparação de igualdade, o javascript tem o `==`  composto por dois iguais em sequencia.
+para comparação de igualdade, o javascript tem o `==`  composto por dois iguais em sequência.
 
 - `=` representa atribuir, salvar algo em uma variável
 
-- `==` representa igualdade, sem comparar o tipo das variáveis, e por causa disso uma string "1" será verdadeira na comparação com um numero 1
+- `==` representa igualdade, sem comparar o tipo das variáveis, e por causa disso uma string "1" será verdadeira na comparação com um número 1
 
   ```js
   1 == "1" // true
   ```
 
-- `===` representa igualdade, comparando o tipo da variável. E neste caso uma string "1" será falsa na comparação com um numero 1
+- `===` representa igualdade, comparando o tipo da variável. E neste caso uma string "1" será falsa na comparação com um número 1
 
   ```js
   1 == "1" // false
@@ -164,15 +172,19 @@ para comparação de igualdade, o javascript tem o `==`  composto por dois iguai
 > dito isto, a comparação de igualdade mais segura é a formada por três símbolos de igual `===`
 > e corrigi a linha 71 para se comportar de acordo
 
-### Boas praticas
+-----
 
-Durante a leitura do código, sinto muita falta da identação,
+### Boas práticas
+
+Durante a leitura do código, sinto muita falta da indentação,
 
 ![Alt text](image-2.png)
 
-é uma excelente boa pratica organizar o código e deixa-lo identadado, isso facilita a leitura e debub.
+é uma excelente boa prática organizar o código e deixá-lo indentado, isso facilita a leitura e debug.
 ![Alt text](image-3.png)
 >desta forma fica legível que o segundo } , na linha 36 se refere a uma estrutura superior, enquanto o } da linha 35 é o encerramento do bloco else
+
+-----
 
 ### Aviso sobre escopo
 
@@ -187,7 +199,13 @@ E esse erro você cometeu no bem próximo do print anterior,
 > na imagem acima é possível observar que foi declarado duas vezes a variável titulo, com escopo global, onde uma delas é uma lista de strings, e na segunda é apenas uma string. esse conflito no uso das variáveis causará confusão no comportamento do script.
 >
 
+-----
+
 ### Recomendo estudar sobre como funcionam as funções arrow function () => {}
+
+A versão do ECMA Script 2015 do JavaScript, trouxe uma nova forma mais sucinta de trabalhar com funções chamada de **Arrow Functions**, por causa da sintaxe que lembra uma flecha: `() =>`.
+
+- Talvez esse blog ajude - [Entendendo Arrow Functions de uma vez por todas](https://www.hcode.com.br/blog/entendendo-arrow-functions-de-uma-vez-por-todas), mas não se limite a ele, existem bons [conteúdos na documentação da Mozilla](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/Arrow_functions) e da Alura.
 
 ![Alt text](image-6.png)
 duas vezes foram utilizadas estas funções de forma equivocada
@@ -199,7 +217,7 @@ duas vezes foram utilizadas estas funções de forma equivocada
 
 > no entrando, não é o que está acontecendo, pelo fato de estar declarando como bloco `{` e `}`, se torna necessário declarar verbosamente o retorno com `return`
 >
-> a alternativa para uma função de apenas um argumento, para suprimir o `return` é colocar o retorno logo aspos 0 `=>` sem o uso de `{ }`
+> a alternativa para uma função de apenas um argumento, para suprimir o `return` é colocar o retorno logo apos o `=>` sem o uso de `{ }`
 >
 
 - Exemplo
@@ -229,16 +247,19 @@ duas vezes foram utilizadas estas funções de forma equivocada
 > .then(response => response.json() )
 > ```
 
-- OBS: na versão original o retorno era undefined, então os dados retornados pela api com o uso do fetch eram perdidos
+- OBS: na versão original o retorno era undefined, então os dados retornados pela API com o uso do fetch eram perdidos
 
+-----
 
-### Eportar as variaveis da api sem usar variaveis global
+### Exportar as variáveis da API sem usar variáveis global
 
   ![Alt text](image-8.png)
 
-  Como usar variaveis global representam perigo, a forma correta de eportar as variaveis recebidas pela api ~~, e neste caso mokadas,~~ é retornar em formato de objeto e desconstruir ele na variável que receberia o retorno da api.
+  Como usar variáveis global representam perigo, a forma correta de exportar as variáveis recebidas pela API ~~, e neste caso mookadas,~~ é retornar em formato de objeto e desconstruir ele na variável que receberia o retorno da API.
 
-#### Exemplo, o codigo da imagem acima ficaria
+-----
+
+#### Exemplo, o código da imagem acima ficaria
 
   ![Alt text](image-9.png)
 
@@ -258,23 +279,27 @@ duas vezes foram utilizadas estas funções de forma equivocada
 >   } = fetch('vacinas.json')
 >   ```
 
-A desconstrução não é obrigarorioa, você pode salvar o retorno da função em uma variável e acessar as variaveis sem desconstruir.
+A desconstrução não é obrigatória, você pode salvar o retorno da função em uma variável e acessar as variáveis sem desconstruir.
+
+-----
 
 #### Exemplo, em vez de desconstruir, criei uma variável const vacinas
 
   ![Alt text](image-10.png)
-  > e para aceesar o titulo, faixaetaria ou intervaloDose, basta utilizar `vacinas.titulo` ou `vacinas.faixaetaria`
+  > e para acessar o titulo, faixaetaria ou intervaloDose, basta utilizar `vacinas.titulo` ou `vacinas.faixaetaria`
   >
   >```js
   >console.log("Os titulos da Vacina são: ", vacinas.titulo.join(", "))
   >```
   >
 
-Com este ultimo exemplo, você já consegue usar a api para receber os dados das vacinas em vez de usar os json
+Com este último exemplo, você já consegue usar a API para receber os dados das vacinas em vez de usar os json
 
-- 1. trocar dados que vem da linha 3 `import dados from "../../vacinas.json";`
+- 1. Trocar dados que vem da linha 3 `import dados from "../../vacinas.json";`
   - 1.1 Comentando a linha 3
   - 1.2 Trocando a variável "dados" por "vacinas" que foi declarada no exemplo anterior ( [Exemplo, em vez de desconstruir,...](#exemplo-em-vez-de-desconstruir-criei-uma-variável-const-vacinas) )
+
+-----
 
 ### Erro nos handles
 
@@ -283,11 +308,11 @@ Com este ultimo exemplo, você já consegue usar a api para receber os dados das
 Na imagem acima, **Qual a diferença dos dois primeiros handles para os dois ultimos?**
 
 ![Alt text](image-12.png)
-  > os dois primeiros estão corretmante modificando em state apenas a variável que lhes foi direcionado modificar (respectivamente `faixa` e `vacinas`), enquanto os dois ultimos estão apagando todas as variaveis salvas em state e salvando apenas as variavis data e dose, respectivamente.
+  > os dois primeiros estão corretante modificando em state apenas a variável que lhes foi direcionado modificar (respectivamente `faixa` e `vacinas`), enquanto os dois últimos estão apagando todas as variáveis salvas em state e salvando apenas as variáveis data e dose, respectivamente.
 
-  > Você pode experiemtnar esse erro pedindo para o console.log exibir o valor salvo em state.
-  > 
-  > - Nos dois primiros casos state se mantem constante
-  > - Nos dois ultimos casos state é limpo e apresenta > apenas a ultima varaivel adicionada
+  > Você pode experienciar esse erro pedindo para o console.log exibir o valor salvo em state.
+  >
+  > - Nos dois primeiros casos state se mantêm constante
+  > - Nos dois últimos casos state é limpo e apresenta > apenas a última variável adicionada
 
-  > Você precisa corrigir os **dois ultimos handles** ( `handleDate` e `handleDose`) para respeitar a estrutura de state e modificar apenas o necessario, assim como os `handleChangeFaixaEtaria` e `handleChangeVacina`
+  > Você precisa corrigir os **dois ultimos handles** ( `handleDate` e `handleDose`) para respeitar a estrutura de state e modificar apenas o necessário, assim como os `handleChangeFaixaEtaria` e `handleChangeVacina`
