@@ -40,20 +40,20 @@ Erro:
 >    Error: error:0308010C:digital envelope routines::unsupported
 >        at new Hash (node:internal/crypto/hash:71:19)
 >        at Object.createHash (node:crypto:133:10)
->    at module.exports (C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\webpack\lib\util\createHash.   js:90:53)
->    at NormalModule._initBuildHash (C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\webpack\lib\NormalModule. js:401:16)
->    at handleParseError (C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\webpack\lib\NormalModule.    js:449:10)
->    at C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\webpack\lib\NormalModule.  js:481:5
->    at C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\webpack\lib\NormalModule.  js:342:12        
->    at C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\loader-runner\lib\LoaderRunne  r.js:373:3   
->    at iterateNormalLoaders (C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\loader-runner\lib\LoaderRunn er.js:214:10)
->    at iterateNormalLoaders (C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\loader-runner\lib\LoaderRunn er.js:221:10)
->    at C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\loader-runner\lib\LoaderRunne  r.js:236:3   
->    at runSyncOrAsync (C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\loader-runner\lib\LoaderRunn   er.js:130:11)
->    at iterateNormalLoaders (C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\loader-runner\lib\LoaderRunn er.js:232:2)
->    at Array.<anonymous> (C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\loader-runner\lib\LoaderRunn    er.js:205:4)
->    at Storage.finished (C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\enhanced-resolve\lib\CachedI nputFileSystem.js:55:16)
->    at C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\enhanced-resolve\lib\CachedIn  putFileSystem.js:91:9
+>    at module.exports (C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\webpack\lib\util\createHash.js:90:53)
+>    at NormalModule._initBuildHash (C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\webpack\lib\NormalModule.js:401:16)
+>    at handleParseError (C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\webpack\lib\NormalModule.js:449:10)
+>    at C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\webpack\lib\NormalModule.js:481:5
+>    at C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\webpack\lib\NormalModule.js:342:12        
+>    at C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\loader-runner\lib\LoaderRunner.js:373:3   
+>    at iterateNormalLoaders (C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\loader-runner\lib\LoaderRunner.js:214:10)
+>    at iterateNormalLoaders (C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\loader-runner\lib\LoaderRunner.js:221:10)
+>    at C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\loader-runner\lib\LoaderRunner.js:236:3   
+>    at runSyncOrAsync (C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\loader-runner\lib\LoaderRunner.js:130:11)
+>    at iterateNormalLoaders (C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\loader-runner\lib\LoaderRunner.js:232:2)
+>    at Array.<anonymous> (C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\loader-runner\lib\LoaderRunner.js:205:4)
+>    at Storage.finished (C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\enhanced-resolve\lib\CachedInputFileSystem.js:55:16)
+>    at C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\enhanced-resolve\lib\CachedInputFileSystem.js:91:9
 >    C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\react-scripts\scripts\start.js:19
 >    throw err;
 >    ^
@@ -61,14 +61,14 @@ Erro:
 >    Error: error:0308010C:digital envelope routines::unsupported
 >        at new Hash (node:internal/crypto/hash:71:19)
 >        at Object.createHash (node:crypto:133:10)
->    at module.exports (C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\webpack\lib\util\createHash.   js:90:53)
->    at NormalModule._initBuildHash (C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\webpack\lib\NormalModule. js:401:16)
->    at C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\webpack\lib\NormalModule.  js:433:10        
->    at C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\webpack\lib\NormalModule.  js:308:13        
->    at C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\loader-runner\lib\LoaderRunne  r.js:367:11  
->    at C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\loader-runner\lib\LoaderRunne  r.js:233:18  
->    at context.callback (C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\loader-runner\lib\LoaderRunn er.js:111:13)
->    at C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\react-scripts\node_modules\ba  bel-loader\lib\index.js:51:103 {
+>    at module.exports (C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\webpack\lib\util\createHash.js:90:53)
+>    at NormalModule._initBuildHash (C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\webpack\lib\NormalModule.js:401:16)
+>    at C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\webpack\lib\NormalModule.js:433:10        
+>    at C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\webpack\lib\NormalModule.js:308:13        
+>    at C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\loader-runner\lib\LoaderRunner.js:367:11  
+>    at C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\loader-runner\lib\LoaderRunner.js:233:18  
+>    at context.callback (C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\loader-runner\lib\LoaderRunner.js:111:13)
+>    at C:\LES\DjEdu28\projeto-de-outros\aprazamento\node_modules\react-scripts\node_modules\babel-loader\lib\index.js:51:103 {
 >    opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ],
 >    library: 'digital envelope routines',
 >    reason: 'unsupported',
@@ -133,8 +133,8 @@ Esse tipo de erro não impede a exibição no computador/modo desenvolvimento, p
 
 ### Analisando erro 1
 
-O primeiro alarme fala sobre variavel titulo não sendo usada.
-Encontrei um erro gravissimo de lógica em:
+O primeiro alarme fala sobre variável titulo não sendo usada.
+Encontrei um erro gravíssimo de lógica em:
 ![Alt text](image-1.png)
 
 acredito que a intenção era verificar se titulo é IGUAL a "Recém-nascido", mas o que está acontecendo nessa linha
@@ -155,7 +155,7 @@ para comparação de igualdade, o javascript tem o `==`  composto por dois iguai
   1 == "1" // true
   ```
 
-- `===` representa igualdade, comparando o tipo da variavel. E neste caso uma string "1" será falsa na comparação com um numero 1
+- `===` representa igualdade, comparando o tipo da variável. E neste caso uma string "1" será falsa na comparação com um numero 1
 
   ```js
   1 == "1" // false
@@ -236,7 +236,7 @@ duas vezes foram utilizadas estas funções de forma equivocada
 
   ![Alt text](image-8.png)
 
-  Como usar variaveis global representam perigo, a forma correta de eportar as variaveis recebidas pela api ~~, e neste caso mokadas,~~ é retornar em formato de objeto e desconstruir ele na variavel que receberia o retorno da api.
+  Como usar variaveis global representam perigo, a forma correta de eportar as variaveis recebidas pela api ~~, e neste caso mokadas,~~ é retornar em formato de objeto e desconstruir ele na variável que receberia o retorno da api.
 
 #### Exemplo, o codigo da imagem acima ficaria
 
@@ -258,9 +258,9 @@ duas vezes foram utilizadas estas funções de forma equivocada
 >   } = fetch('vacinas.json')
 >   ```
 
-A desconstrução não é obrigarorioa, você pode salvar o retorno da função em uma variavel e acessar as variaveis sem desconstruir.
+A desconstrução não é obrigarorioa, você pode salvar o retorno da função em uma variável e acessar as variaveis sem desconstruir.
 
-#### Exemplo, em vez de desconstruir, criei uma variavel const vacinas
+#### Exemplo, em vez de desconstruir, criei uma variável const vacinas
 
   ![Alt text](image-10.png)
   > e para aceesar o titulo, faixaetaria ou intervaloDose, basta utilizar `vacinas.titulo` ou `vacinas.faixaetaria`
@@ -274,7 +274,7 @@ Com este ultimo exemplo, você já consegue usar a api para receber os dados das
 
 - 1. trocar dados que vem da linha 3 `import dados from "../../vacinas.json";`
   - 1.1 Comentando a linha 3
-  - 1.2 Trocando a variavel "dados" por "vacinas" que foi declarada no exemplo anterior ( [Exemplo, em vez de desconstruir,...](#exemplo-em-vez-de-desconstruir-criei-uma-variavel-const-vacinas) )
+  - 1.2 Trocando a variável "dados" por "vacinas" que foi declarada no exemplo anterior ( [Exemplo, em vez de desconstruir,...](#exemplo-em-vez-de-desconstruir-criei-uma-variável-const-vacinas) )
 
 ### Erro nos handles
 
@@ -283,7 +283,7 @@ Com este ultimo exemplo, você já consegue usar a api para receber os dados das
 Na imagem acima, **Qual a diferença dos dois primeiros handles para os dois ultimos?**
 
 ![Alt text](image-12.png)
-  > os dois primeiros estão corretmante modificando em state apenas a variavel que lhes foi direcionado modificar (respectivamente `faixa` e `vacinas`), enquanto os dois ultimos estão apagando todas as variaveis salvas em state e salvando apenas as variavis data e dose, respectivamente.
+  > os dois primeiros estão corretmante modificando em state apenas a variável que lhes foi direcionado modificar (respectivamente `faixa` e `vacinas`), enquanto os dois ultimos estão apagando todas as variaveis salvas em state e salvando apenas as variavis data e dose, respectivamente.
 
   > Você pode experiemtnar esse erro pedindo para o console.log exibir o valor salvo em state.
   > 
