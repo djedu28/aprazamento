@@ -1,20 +1,37 @@
-.logo {
-    position: absolute;
-    left: 30%;
-    right: 37.88%;
-    top: 2%;
-    bottom: 86.58%;
+body {
+    height: 100%;
+}
 
-    width: 22%;
-    height: 22%;
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    align-items: center;
+}
+
+.logo-vac {
+    margin: 0;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    height: 100px;
+    width: 100px;
 }
 
 .text-span {
+
+    margin: 0;
+
     position: absolute;
-    left: 0%;
-    right: 20%;
-    top: 25%;
-    bottom: 79.2%;
+    top: 60px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 
     font-family: 'Inter';
     font-style: normal;
@@ -26,11 +43,6 @@
     color: #FFFEFE;
 }
 
-.img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
 .pesquisa {
     position: absolute;
     left: 2.24%;
@@ -39,13 +51,13 @@
     bottom: 54.37%;
 }
 
-
 .wrapper-pesquisa {
     position: absolute;
     left: 6.5%;
     right: 0%;
     top: 40%;
     bottom: -31.67%;
+    
 
     background: #FFFFFF;
     height: 60%;
@@ -53,13 +65,7 @@
     border-radius: 35px;
 }
 
-.pesquisa-faixa-etaria {
-    position: absolute;
-    left: 10%;
-    right: 4.95%;
-    top: 35%;
-    bottom: 54.85%;
-
+.sel-pesquisa {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700px;
@@ -71,68 +77,56 @@
     background: #74B3B5;
     border-radius: 100px;
 
-    width: 63%;
-    height: 10%;
+    width: 380px;
+    height: 70px;
+
+}
+
+form{
+    width: 100%;
+}
+.pesquisa-faixa-etaria {
+    position: absolute;
+    top: 40%;
+    left:50%;
+    transform: translate(-50%, -50%);
 }
 
 .pesquisa-vacina {
     position: absolute;
-    left: 10%;
-    right: 4.95%;
-    top: 48%;
-    bottom: 54.85%;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700px;
-    font-size: 20px;
-    line-height: 48px;
-    text-align: center;
-    color: #ffffff;
-
-    background: #74B3B5;
-    border-radius: 100px;
-
-    width: 63%;
-    height: 10%;
+    top: 52%;
+    left:50%;
+    transform: translate(-50%, -50%);
 }
 
 .pesquisa-data {
-    position: absolute;
-    left: 10%;
-    right: 4.95%;
-    top: 60%;
-    bottom: 14.56%;
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700px;
-    font-size: 20px;
-    line-height: 48px;
-    text-align: center;
-    color: #ffffff;
+    position:absolute; 
+    top:64%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
 
-    background: #74B3B5;
-    border-radius: 100px;
-
-    width: 60%;
-    height: 10%;
-
-    padding-right: 10px;
+.pequisa-dose {
+    position:absolute; 
+    top: 76%;
+    left:50%;
+    transform: translate(-50%, -50%);
 }
 
 .pesquisa-button {
-    position: absolute;
-    left: 34%;
-    right: 0%;
-    top: 75%;
-    bottom: -2.51%;
 
+    position:absolute; 
+    top: 90%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  
+    text-align: center;
+  
     background: #69a8bb;
     border-radius: 35px;
 
-    height: 10%;
-    width: 20%;
+    height: 70px;
+    width: 200px;
     
     border-radius: 35px;
     

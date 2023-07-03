@@ -4,7 +4,7 @@ import "./footer.css";
 class Footer extends PureComponent {
   render() {
     return (
-      <footer>
+
         <div className="footer-wrapper">
         
           <span className="footer-text">Plataforma desenvolvida por Elisa e Sophia Pinto.<br/>Copyright&copy;&nbsp;2022.<br/>Todos os direitos reservados.</span>
@@ -19,8 +19,6 @@ class Footer extends PureComponent {
           */}
           
         </div>
-        
-      </footer>
     );
   }
 }

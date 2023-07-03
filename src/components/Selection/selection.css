@@ -1,125 +1,85 @@
-.logo-18 {
-    position: absolute;
-    left: 40%;
-    right: 37.88%;
-    top: 4%;
-    bottom: 50%;
-
-    height: 22%;
-    width: 22%;
+body {
+    height: 100%;
 }
 
-.img {
-    max-height: 100%;
-    max-width: 100%;    
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.text-span-18 {
-    position: absolute;
-    left: 10%;
-    right: 5%;
-    top: 25%;
-    bottom: 80%;
+.select-img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
 
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 25px;
-    line-height: 36px;
+@media only screen and (min-width: 768px){
+    .selection-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 3vw);
+        grid-gap: 120px;
+        margin-bottom: 100px;
+    }   
+}
+
+@media only screen and (min-width: 200px) and (max-width: 767px)  {
+ 
+    .selection-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 2vw);
+        grid-gap: 120px;
+        margin-bottom: 100px;
+    }   
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    top: 250px;
+    width: 80%;
+    margin: 2rem auto;  
+    transform: translateY(5px);
+}
+
+.text-selection {
     text-align: center;
-
-    color: #FFFEFE;
-}
-
-.grid-item-01 {
-    position: absolute;
-    left: 10%;
-    right: 100%;
-    top: 60%;
-    bottom: 33.33%;
-
-    width: 20%;
-    height: 25%;
-}
-
-.grid-item-02 {
-    position: absolute;
-    left: 40%;
-    right: 120%;
-    top: 60%;
-    bottom: 33.12%;    
-    
-    width: 20%;
-    height: 25%;
-}
-
-.grid-item-03 {
-    position: absolute;
-    left: 67.33%;
-    right: 140%;
-    top: 60%;
-    bottom: 32.8%;
-
-    width: 20%;
-    height: 25%;
-}
-
-.grid-item-04 {
-    position: absolute;
-    left: 4.85%;
-    right: 120%;
-    top: 90%;
-    bottom: 5%;
-
-    width: 20%;
-    height: 25%;
-}
-
-.grid-item-05 {
-    position: absolute;
-    left: 40.91%;
-    right: 120%;
-    top: 90%;
-    bottom: 5%;
-    width: 20%;
-    height: 25%;
-
-}
-
-.grid-item-06 {
-    position: absolute;
-    left: 71.52%;
-    right: 130%;
-    top: 90%;
-    bottom: 5%;
-
-    width: 20%;
-    height: 25%;
+    text-decoration: none;    
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFF2F2;
 }
 
 .calendario-wrapper{
     position: absolute;
     left: 0%;
     right: 0%;
-    top: 38%;
-    bottom: 50%;
-    
+    top: 30%;
+
     background: #8bc0c4;
 
-    height: 20%;
+    height: 100px;
     width: 100%;
 }
 
 .figure-calendario {
     position: absolute;
-    left: 20%;
-    right: 24.55%;
-    top: -15%;
-    bottom: 52.83%;
-    height: 90%;
-    width: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    height: 100px;
+    width: 100px;
 }
 
+
+
+/*
 .text-selection-01 {
     position: absolute;
     left: 0%;
@@ -216,7 +176,99 @@
     color: #FFF2F2;
 }
 
+.grid-item-01 {
+    position: absolute;
+    left: 10%;
+    right: 100%;
+    top: 60%;
+    bottom: 33.33%;
 
-.selection-wrapper {
-    margin-bottom: 120%;
+    width: 20%;
+    height: 25%;
 }
+
+.grid-item-02 {
+    position: absolute;
+    left: 40%;
+    right: 120%;
+    top: 60%;
+    bottom: 33.12%;    
+    
+    width: 20%;
+    height: 25%;
+}
+
+.grid-item-03 {
+    position: absolute;
+    left: 67.33%;
+    right: 140%;
+    top: 60%;
+    bottom: 32.8%;
+
+    width: 20%;
+    height: 25%;
+}
+
+.grid-item-04 {
+    position: absolute;
+    left: 4.85%;
+    right: 120%;
+    top: 90%;
+    bottom: 5%;
+
+    width: 20%;
+    height: 25%;
+}
+
+.grid-item-05 {
+    position: absolute;
+    left: 40.91%;
+    right: 120%;
+    top: 90%;
+    bottom: 5%;
+    width: 20%;
+    height: 25%;
+
+}
+
+.grid-item-06 {
+    position: absolute;
+    left: 71.52%;
+    right: 130%;
+    top: 90%;
+    bottom: 5%;
+
+    width: 20%;
+    height: 25%;
+}
+
+
+.logo-18 {
+    position: absolute;
+    left: 40%;
+    right: 37.88%;
+    top: 4%;
+    bottom: 50%;
+
+    height: 22%;
+    width: 22%;
+}
+
+.text-span-18 {
+    position: absolute;
+    left: 10%;
+    right: 5%;
+    top: 25%;
+    bottom: 80%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 36px;
+    text-align: center;
+
+    color: #FFFEFE;
+}
+
+*/

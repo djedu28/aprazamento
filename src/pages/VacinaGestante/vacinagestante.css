@@ -31,21 +31,6 @@
     color: #FFFEFE;
 }
 
-
-.wrapper-vacina-item-gestante {
-    position: absolute;
-    left: 10%;
-    right: 0%;
-    top: 40%;
-    bottom: 0%;
-
-    background: #FFFFFF;
-    border-radius: 20px;
-
-    width: 80%;
-    height: 45%;
-}
-
 .img {
 
     max-width: 100%;
@@ -168,18 +153,30 @@
     color: #548B95;
 }
 
+.wrapper-vacina-item-gestante {
+    position: absolute;
+    left: 10%;
+    right: 0%;
+    top: 40%;
+    
+    background: #FFFFFF;
+    border-radius: 20px;
+
+    width: 550px;
+    height: 300px;
+}
+
 .wrapper-vacina-item-02-gestante {
     position: absolute;
     left: 10%;
     right: 0%;
     top: 90%;
-    bottom: 0%;
 
     background: #FFFFFF;
     border-radius: 20px;
 
-    width: 80%;
-    height: 45%;
+    width: 550px;
+    height: 300px;
 }
 
 .wrapper-vacina-item-03-gestante {
@@ -187,11 +184,10 @@
     left: 10%;
     right: 0%;
     top: 140%;
-    bottom: 0%;
 
     background: #FFFFFF;
     border-radius: 20px;
 
-    width: 80%;
-    height: 45%;
+    width: 550px;
+    height: 300px;
 }

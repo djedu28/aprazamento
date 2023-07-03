@@ -6,11 +6,11 @@ import logo from "../../assets/images/logo.png";
 class Header extends PureComponent {
   render() {
     return (
-      <div>
+      <div className="hgroup">
         <div className= "logo-19">
           <img src= {logo} alt="Senhora Vacina" />
         </div>
-        <span className="text-span-19">CALENDÁRIO VACINAL</span>
+        <h1 className="text-span-19">CALENDÁRIO VACINAL</h1>
       </div>
     );
   }

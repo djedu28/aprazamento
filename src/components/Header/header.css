@@ -1,28 +1,40 @@
-.logo-19 {
-    position: absolute;
-    left: 35%;
-    right: 37.88%;
-    top: 2%;
-    bottom: 86.58%;
-
-    height: 30%;
-    width: 20%;
+body {
+    height: 100%;
 }
 
-.text-span-19 {
-    position: absolute;
-    left: 0%;
-    right: 12.17%;
-    top: 20%;
-    bottom: 79.2%;
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+.hgroup {
+    position: relative;
+    z-index: 1;
+}
+
+.text-span-19{
+ 
+    position: relative;
+    top: 50%;
+    transform: translateY(350%);
+    text-align: center;
+    
     font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 36px;
-    text-align: center;
 
     color: #FFFEFE;
+}
 
+.logo-19 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;    
+
+    height: 100px;
+    width: 100px;
 }

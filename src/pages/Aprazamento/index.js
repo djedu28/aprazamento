@@ -1,3 +1,5 @@
+import React from 'react';
+
 import PrazoVacinas from '../../components/PrazoVacinas';
 
 function Aprazamento () {

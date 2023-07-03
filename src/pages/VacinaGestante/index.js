@@ -14,7 +14,7 @@ function VacinaGestante () {
           <img src= {gestante} alt="Vacina Gestante" />
         </div>
         <span className="text-gest-calenderio">CALENDÁRIO VACINAL DA GESTANTE</span>
-
+        
         <div className= "wrapper-vacina-item-gestante">
             <div className="logo-vacina">
                 <img src= {vacinalogo} alt="logo" />
@@ -24,7 +24,7 @@ function VacinaGestante () {
             <span className="text-infomacao-gestante">Informações:</span>
             
             <div className="wrapper-quant-doses-gestante">
-                <span className="text-quant-doses-02">3</span>
+                <span className="text-quant-doses-02-gestante">3</span>
             </div>
 
             
